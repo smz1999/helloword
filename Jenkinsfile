@@ -14,7 +14,7 @@ node {
         }
     }
     stage('Deploy') {
-        marathon credentialsId: '', docker: 'demo.local:5000/${JOB_NAME}:${BUILD_NUMBER}', filename: 'marathon.json', id: '', url: 'http://demo.local:8080'
+        marathon credentialsId: '', docker: 'demo.local:5000/${JOB_NAME}:${BUILD_NUMBER}', filename: 'marathon.json', id: '', url: 'http://localhost:8080'
     }
 
 }
