@@ -1,5 +1,6 @@
 {
   "id": "companynews",
+  "cpus": 0.1,
   "container": {
     "type": "DOCKER",
     "docker": {
@@ -11,6 +12,5 @@
     },
     "volumes": []
   }
-  "cpus": 0.2,
 }
 
