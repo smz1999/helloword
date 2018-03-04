@@ -5,7 +5,7 @@ node {
         git 'https://github.com/wwyhy/hello-world-war.git'
     }
     stage('Build') {
-        sh '/var/jenkins_home/tools/maven/bin/mvn -B -f ${WORKSPACE}/${JOB_NAME}/pom.xml clean install'
+        sh '/var/jenkins_home/tools/maven/bin/mvn -B -f ${WORKSPACE}/pom.xml clean install'
     }
     stage('Build Image and Push ') {
         def imageName = 'demo.local:5000/${JOB_NAME}:${BUILD_NUMBER}'
