@@ -5,6 +5,7 @@
 <body>
 
 	<h1>Hello World!</h1>
+	<h1>dev1.0</h1>
 	<p>
 		It is now
 		<%= new java.util.Date() %></p>
